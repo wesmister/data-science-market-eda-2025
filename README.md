@@ -23,7 +23,7 @@ To extract actionable insights from a global dataset of data science job listing
 # Project Files
 
 - `ds_salaries.csv` – Original dataset from Kaggle
-- _ds_salaries_cleaned.csv` – Python script for data cleaning
+- `ds_salaries_cleaned.csv` – Python script for data cleaning
 - `ds_salaries.sql` – SQL queries used for Tableau visuals and KPIs
 - `In_Depth_Queries.sql` – Additional exploratory queries not visualized
 - `Tabeleau Final Visuals.twbx` – Tableau dashboard export (for non-interactive viewing)
