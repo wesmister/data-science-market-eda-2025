@@ -1,88 +1,47 @@
-
-# Data Science Job Market Dashboard
-
-This project analyzes over 2,500 data science job listings to uncover trends in salary, experience level, remote work distribution, and job title demand. Using tools like Python, SQL, and Tableau, the project explores what factors contribute to higher salaries and which roles are most in demand across locations.
-
----
+# Data Science Job Market EDA – Salary, Skills & Remote Trends (2024–2025)
 
 # Objective
+Explore the U.S. data science job market using job listing data to uncover trends in salaries, required skills, company sizes, and remote work opportunities. Designed to inform job seekers and hiring teams about key market dynamics.
 
-To extract actionable insights from a global dataset of data science job listings and visually communicate findings through a Tableau dashboard. The project aims to support career decision-making for aspiring data analysts and data scientists.
+# Tools & Skills
+- **Python (Pandas, Matplotlib, Seaborn)**: Data cleaning, exploratory data analysis, and visualizations
+- **SQL (MySQL)**: Querying insights by company size, remote status, and region
+- **Tableau**: Interactive dashboard showcasing trends by salary, job location, and more
+- **Excel**: Initial data review and VLOOKUP for job title normalization
 
----
+# Project Workflow
+1. **Data Cleaning (Python)**
+   - Cleaned null values, standardized job titles and location data
+   - Used Regex to extract and categorize top-requested skills (e.g., Python, SQL, Tableau)
 
-# Tools Used
+2. **Exploratory Analysis (Python + SQL)**
+   - Salary distribution across remote vs. on-site roles
+   - Salary trends by company size and region
+   - Frequency analysis of required skills across listings
+   - Time-based posting trends
 
-- **Python** (Pandas, Matplotlib, WordCloud) – for data cleaning and exploration
-- **MySQL** – for structured queries and aggregations
-- **Tableau Public** – for building KPIs and interactive dashboards
-- **Excel** – for basic review and column formatting
+3. **Dashboard Development (Tableau)**
+   - Created an interactive dashboard showing:
+     - Median salary by job type and remote status
+     - Skill frequency word cloud
+     - Distribution by company size and location
+     - Job listing volume over time
 
----
+# Key Insights
+- **Remote roles had a lower salary ceiling** compared to on-site roles at top-paying companies  
+- **Python, SQL, and Tableau** were the most requested skills across all company sizes  
+- **Large companies offered higher median salaries** but were less likely to offer remote roles  
+- **Tech-heavy states like California and New York** remained top locations, but **remote roles spiked nationwide** in early 2024  
 
-# Project Files
+# Business & Candidate Impact
+These insights help job seekers prioritize top-paying roles by region and skill match, and allow companies to benchmark compensation strategies in a competitive market.
 
-- `ds_salaries.csv` – Original dataset from Kaggle
-- `ds_salaries_cleaned.csv` – Python script for data cleaning
-- `ds_salaries.sql` – SQL queries used for Tableau visuals and KPIs
-- `In_Depth_Queries.sql` – Additional exploratory queries not visualized
-- `Tabeleau Final Visuals.twbx` – Tableau dashboard export (for non-interactive viewing)
-- `dashboard.png` – Screenshot of the Tableau dashboard
-- `README.md` – This file
+# Dashboard Preview
 
----
+![Job Market Dashboard Screenshot](images/jobmarket_dashboard.png)
 
-# Key Insights & Questions Answered
+> 🔗 **[View Tableau Dashboard](dashboards/DataScience_JobMarket_Tableau.pdf)**  
+> 🧾 **[SQL Analysis Scripts](sql/jobmarket_eda_queries.sql)**  
 
-1. **What is the total number of job listings?**
-2. **What is the average salary across all roles?**
-3. **How do salaries differ by experience level?**
-4. **What % of jobs are remote, hybrid, or on-site?**
-5. **What are the highest-paying job titles overall?**
-6. **Which company locations post the most jobs?**
-7. **Which countries offer the highest average salaries?**
-8. **Which entry-level and mid-level roles pay the best?**
-9. **Are remote jobs capped at lower salaries compared to on-site roles?**
-10. **Is there a salary gap between large and small companies?**
+## 🔍 Folder Structure
 
----
-
-# Tableau Dashboard
-
-**Live Dashboard**: [View on Tableau Public](https://public.tableau.com/app/profile/wesley.isenberger/viz/TabelauVisuals/DataScienceJobMarketDashboard-2025) 
-**Screenshot**:  
-
-Features:
-- KPIs for total jobs, avg. salary, and % remote
-- Bar charts by experience level and company location
-- Geo map of salary by employee residence
-- Job title salary breakdown
-
----
-
-# What I Learned
-
-- Writing and optimizing **SQL queries** for grouped aggregations
-- Cleaning and preprocessing real-world data with **Pandas**
-- Building clear, KPI-driven visual dashboards in **Tableau**
-- Translating data into insights for job-seeking professionals
-
----
-
-# Dataset
-
-- Source: [Data Science Salaries 2023 – Kaggle](https://www.kaggle.com/datasets/arnabchaki/data-science-salaries-2023)
-- File: `ds_salaries.csv`
-- Size: ~2,500 rows
-
----
-
-# Project Type
-
-> **Portfolio Project**  
-> **Data Analysis & Visualization**  
-> **Career & Salary Insights**
-
----
-
-Feel free to fork, clone, or use this structure to guide your own job market analyses!
